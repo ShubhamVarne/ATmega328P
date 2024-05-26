@@ -12,7 +12,7 @@ Now we need insatll libararies, through this command we can install them.
 $ sudo apt install avr-libc 
 
 To compile and generate .out file we have to use instruction 
-avr-gcc --mmcu=atmega328p <source_file.c> -o <target_file.out>
+avr-gcc -mmcu=atmega328p <source_file.c> -o <target_file.out>
 
 Now the generated .out file is not in an understandable for our AVR Controller
 The .out file is generated in Operating system favourable environment like it may have

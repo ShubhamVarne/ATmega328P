@@ -30,7 +30,7 @@ so we will use avr-objcopy utility that comes with gcc-avr toolchain
 
 Command to upload code on arduino
 
-avrdude -C /etc/avrdude.conf -v -p atmega328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:<.hex_file>:i
+**avrdude -C /etc/avrdude.conf -v -p atmega328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:<.hex_file>:i**
 
 1. <path_of_avrdude.exe_file> 
 2. -C(To specify which avrdude.conf file we use) <path_of_avrdude.conf_file> 

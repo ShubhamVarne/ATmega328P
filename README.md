@@ -12,7 +12,7 @@ Now we need insatll libararies, through this command we can install them.
 $ sudo apt install avr-libc 
 
 To compile and generate .out file we have to use instruction 
-avr-gcc -mmcu=atmega328p <source_file.c> -o <target_file.out>
+**avr-gcc -mmcu=atmega328p <source_file.c> -o <target_file.out>**
 
 Now the generated .out file is not in an understandable for our AVR Controller
 The .out file is generated in Operating system favourable environment like it may have
@@ -20,7 +20,7 @@ different memory segments which processes of OS have, like .text, .data, heap an
 
 We only need .data section and .text section of this file for our code
 so we will use avr-objcopy utility that comes with gcc-avr toolchain
-avr-objcopy -O <ihex> -j <.text> -j <.data> <.out file_name> <.hex file_name>
+**avr-objcopy -O ihex -j .text -j .data <.out file_name> <.hex file_name>**
 
 1. -O(Output format) <ihex> (used for intel hex format)
 2. -j(specifiy which sections of code should get copied) <-j .text -j .data>
